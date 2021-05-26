@@ -1,0 +1,2787 @@
+<!DOCTYPE html>
+<html>
+<style>
+	@font-face {
+    font-family: 'NotoSerifKR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	background-color: black;
+	margin-right: 20;
+}
+
+h1{
+	position: fixed;
+	left:50px;
+	font-size: 30pt;
+	font-family: NotoSerifKR;
+	color:white;
+}
+
+.index{
+	position: fixed;
+	top: 80px;
+	left:50px;
+	font-size: 15pt;
+	font-family: NotoSerifKR;
+	color:white;
+}
+
+
+.return{
+	position: fixed;
+	top: 25px;
+	right:50px;
+	font-size: 15pt;
+	font-family: NotoSerifKR;
+	color:white;
+	cursor: pointer;
+}
+
+
+
+
+.switch{
+	position: fixed;
+	top: 60px;
+	right:50px;
+	font-size: 15pt;
+	font-family: NotoSerifKR;
+	color:white;
+	cursor: pointer;
+}
+
+p{
+  font-size: 15pt;
+  font-family: NotoSerifKR;
+  color: white
+}
+
+
+a { 
+	text-decoration:none;
+}
+
+a:link {
+  color : black;
+}
+
+a:visited {
+  color : black;
+}
+a:hover {
+  color : white;
+}
+/*a:active {
+  color : green;
+}
+*/
+
+.re:link {
+  color : white;
+}
+
+.re:visited {
+  color : white;
+}
+
+
+#mydiv1-1 {
+  position: absolute;
+  top:280px;
+  left:150px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv1-2 {
+  position: absolute;
+  top:340px;
+  left:80px;
+  z-index: 99;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-3 {
+  position: absolute;
+  top:420px;
+  left:80px;
+  z-index: 98;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-4 {
+  position: absolute;
+  top:480px;
+  left:100px;
+  z-index: 97;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-5 {
+  position: absolute;
+  top:540px;
+  left:70px;
+  z-index: 96;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-6 {
+  position: absolute;
+  top:600px;
+  left:100px;
+  z-index: 95;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-7 {
+  position: absolute;
+  top:660px;
+  left:250px;
+  z-index: 94;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-8 {
+  position: absolute;
+  top:720px;
+  left:100px;
+  z-index: 93;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-9 {
+  position: absolute;
+  top:780px;
+  left:70px;
+  z-index: 92;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*----------------중앙------------*/
+
+#mydiv2-1 {
+  position: absolute;
+  top:280px;
+  left:1200px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv2-2 {
+  position: absolute;
+  top:340px;
+  left:1000px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-2:hover{
+	z-index: 100;
+}
+
+
+#mydiv2-3 {
+  position: absolute;
+  top:440px;
+  left:1050px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-4 {
+  position: absolute;
+  top:480px;
+  left:1150px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-5 {
+  position: absolute;
+  top:540px;
+  left:950px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-6 {
+  position: absolute;
+  top:600px;
+  left:1000px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-7 {
+  position: absolute;
+  top:660px;
+  left:1050px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-8 {
+  position: absolute;
+  top:720px;
+  left:1050px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-9 {
+  position: absolute;
+  top:780px;
+  left:1000px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-10 {
+  position: absolute;
+  top:380px;
+  left:1200px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+#mydiv2-11 {
+  position: absolute;
+  top:550px;
+  left:1400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv2-12 {
+  position: absolute;
+  top:630px;
+  left:1570px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-13 {
+  position: absolute;
+  top:750px;
+  left:1400px;
+  z-index: 79;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*---------------동아-------------*/
+#mydiv3-1 {
+  position: absolute;
+  top:280px;
+  left:2300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv3-2 {
+  position: absolute;
+  top:340px;
+  left:2350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv3-3 {
+  position: absolute;
+  top:440px;
+  left:2300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-4 {
+  position: absolute;
+  top:480px;
+  left:2200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-5 {
+  position: absolute;
+  top:540px;
+  left:2300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-6 {
+  position: absolute;
+  top:600px;
+  left:2350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-7 {
+  position: absolute;
+  top:660px;
+  left:2300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-8 {
+  position: absolute;
+  top:720px;
+  left:2300px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-9 {
+  position: absolute;
+  top:780px;
+  left:2400px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-10 {
+  position: absolute;
+  top:380px;
+  left:2150px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*--------4 매경--------*/
+
+#mydiv4-1 {
+  position: absolute;
+  top:280px;
+  left:3300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv4-2 {
+  position: absolute;
+  top:350px;
+  left:3400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv4-3 {
+  position: absolute;
+  top:400px;
+  left:3300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-4 {
+  position: absolute;
+  top:460px;
+  left:3400px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-5 {
+  position: absolute;
+  top:540px;
+  left:3300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-6 {
+  position: absolute;
+  top:600px;
+  left:3400px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-7 {
+  position: absolute;
+  top:660px;
+  left:3350px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-8 {
+  position: absolute;
+  top:720px;
+  left:3350px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-9 {
+  position: absolute;
+  top:780px;
+  left:3300px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-10 {
+  position: absolute;
+  top:380px;
+  left:3500px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+#mydiv4-11 {
+  position: absolute;
+  top:550px;
+  left:3400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+/*----------한겨레-------*/
+
+
+#mydiv5-1 {
+  position: absolute;
+  top:280px;
+  left:4300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv5-2 {
+  position: absolute;
+  top:350px;
+  left:4350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv5-3 {
+  position: absolute;
+  top:400px;
+  left:4300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-4 {
+  position: absolute;
+  top:460px;
+  left:4200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-5 {
+  position: absolute;
+  top:540px;
+  left:4300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-6 {
+  position: absolute;
+  top:600px;
+  left:4350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-7 {
+  position: absolute;
+  top:660px;
+  left:4300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+#mydiv5-8 {
+  position: absolute;
+  top:720px;
+  left:4350px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-9 {
+  position: absolute;
+  top:780px;
+  left:4300px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-10 {
+  position: absolute;
+  top:380px;
+  left:4500px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+#mydiv5-11 {
+  position: absolute;
+  top:550px;
+  left:4400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+#mydiv5-12 {
+  position: absolute;
+  top:720px;
+  left:4350px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+/*---------------한겨레----------*/
+
+#mydiv6-1 {
+  position: absolute;
+  top:280px;
+  left:5300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv6-2 {
+  position: absolute;
+  top:350px;
+  left:5350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv6-3 {
+  position: absolute;
+  top:400px;
+  left:5300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-4 {
+  position: absolute;
+  top:460px;
+  left:5200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-5 {
+  position: absolute;
+  top:540px;
+  left:5300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-6 {
+  position: absolute;
+  top:600px;
+  left:5350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-7 {
+  position: absolute;
+  top:660px;
+  left:5300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+/*---------국민---------*/
+
+#mydiv7-1 {
+  position: absolute;
+  top:280px;
+  left:6300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv7-2 {
+  position: absolute;
+  top:350px;
+  left:6350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-3 {
+  position: absolute;
+  top:400px;
+  left:6300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-4 {
+  position: absolute;
+  top:460px;
+  left:6250px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-5 {
+  position: absolute;
+  top:540px;
+  left:6300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-6 {
+  position: absolute;
+  top:600px;
+  left:6350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-7 {
+  position: absolute;
+  top:660px;
+  left:6300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-8 {
+  position: absolute;
+  top:720px;
+  left:6400px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-9 {
+  position: absolute;
+  top:780px;
+  left:6300px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-10 {
+  position: absolute;
+  top:380px;
+  left:6500px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+/*--------한국-------*/
+
+#mydiv8-1 {
+  position: absolute;
+  top:280px;
+  left:7300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv8-2 {
+  position: absolute;
+  top:350px;
+  left:7350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv8-3 {
+  position: absolute;
+  top:400px;
+  left:7300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-4 {
+  position: absolute;
+  top:460px;
+  left:7200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-5 {
+  position: absolute;
+  top:540px;
+  left:7300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-6 {
+  position: absolute;
+  top:600px;
+  left:7350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-7 {
+  position: absolute;
+  top:660px;
+  left:7300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*---------9 경향----------*/
+
+#mydiv9-1 {
+  position: absolute;
+  top:280px;
+  left:8300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv9-2 {
+  position: absolute;
+  top:350px;
+  left:8350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv9-3 {
+  position: absolute;
+  top:400px;
+  left:8300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv9-4 {
+  position: absolute;
+  top:460px;
+  left:8200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv9-5 {
+  position: absolute;
+  top:540px;
+  left:8300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*------------10 서울------------*/
+
+#mydiv10-1 {
+  position: absolute;
+  top:280px;
+  left:9300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv10-2 {
+  position: absolute;
+  top:350px;
+  left:9350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv10-3 {
+  position: absolute;
+  top:400px;
+  left:9300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv10-4 {
+  position: absolute;
+  top:460px;
+  left:9200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*----------------11 kbs------------------*/
+
+
+#mydiv11-1 {
+  position: absolute;
+  top:280px;
+  left:10300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv11-2 {
+  position: absolute;
+  top:350px;
+  left:10350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv11-3 {
+  position: absolute;
+  top:400px;
+  left:10300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv11-4 {
+  position: absolute;
+  top:460px;
+  left:10250px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv11-5 {
+  position: absolute;
+  top:540px;
+  left:10300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv11-6 {
+  position: absolute;
+  top:600px;
+  left:10350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv11-7 {
+  position: absolute;
+  top:660px;
+  left:10300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv11-8 {
+  position: absolute;
+  top:720px;
+  left:10400px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv11-9 {
+  position: absolute;
+  top:780px;
+  left:10300px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*----------------12 mbc------------------*/
+
+#mydiv12-1 {
+  position: absolute;
+  top:280px;
+  left:11350px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv12-2 {
+  position: absolute;
+  top:350px;
+  left:11400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv12-3 {
+  position: absolute;
+  top:400px;
+  left:11300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv12-4 {
+  position: absolute;
+  top:460px;
+  left:11250px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv12-5 {
+  position: absolute;
+  top:540px;
+  left:11300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv12-6 {
+  position: absolute;
+  top:600px;
+  left:11350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*----------------13 sbs------------------*/
+
+#mydiv13-1 {
+  position: absolute;
+  top:280px;
+  left:12250px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv13-2 {
+  position: absolute;
+  top:350px;
+  left:12350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv13-3 {
+  position: absolute;
+  top:400px;
+  left:12300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv13-4 {
+  position: absolute;
+  top:460px;
+  left:12250px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv13-5 {
+  position: absolute;
+  top:540px;
+  left:12300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv13-6 {
+  position: absolute;
+  top:600px;
+  left:12350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv13-7 {
+  position: absolute;
+  top:660px;
+  left:12300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*----------------14 tv조선------------------*/
+
+#mydiv14-1 {
+  position: absolute;
+  top:280px;
+  left:13300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv14-2 {
+  position: absolute;
+  top:350px;
+  left:13350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+/*----------------15 jtbc------------------*/
+#mydiv15-1 {
+  position: absolute;
+  top:280px;
+  left:14300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv15-2 {
+  position: absolute;
+  top:350px;
+  left:14350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv15-3 {
+  position: absolute;
+  top:400px;
+  left:14300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv15-4 {
+  position: absolute;
+  top:460px;
+  left:14250px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+/*----------------16 채널a------------------*/
+
+#mydiv16-1 {
+  position: absolute;
+  top:280px;
+  left:15300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv16-2 {
+  position: absolute;
+  top:350px;
+  left:15350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv16-3 {
+  position: absolute;
+  top:400px;
+  left:15300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv16-4 {
+  position: absolute;
+  top:460px;
+  left:15250px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+/*-
+
+
+/*----------------17 mbn------------------*/
+
+
+
+#mydiv17-1 {
+  position: absolute;
+  top:280px;
+  left:16250px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv17-2 {
+  position: absolute;
+  top:350px;
+  left:16350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv17-3 {
+  position: absolute;
+  top:400px;
+  left:16300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv17-4 {
+  position: absolute;
+  top:460px;
+  left:16250px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv17-5 {
+  position: absolute;
+  top:540px;
+  left:16300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv17-6 {
+  position: absolute;
+  top:600px;
+  left:16350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv17-7 {
+  position: absolute;
+  top:660px;
+  left:16300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+
+
+
+#mydivheader {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left:25px;
+  padding-right:25px;
+  cursor: pointer;
+  z-index: 10;
+  background-color: #ffffff;
+  border: 1.5px solid black;
+  border-radius: 17px;
+  font-size: 16pt;
+  color: black;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.8), 0 3px 15px 0 rgba(0,0,0,0.2);
+}
+
+#mydivheader:hover{
+	background-color: grey;
+	z-index: 120;
+}
+
+#masterdiv {
+	white-space:nowrap; 
+    overflow-x: auto; }
+
+ .chosun{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:350px
+}
+
+.jungang{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:1350px
+}
+
+.donga{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:2550px
+}
+
+.maekyung{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:3550px	
+}
+
+.hankyung{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:4500px	
+}
+
+.hani{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:5500px	
+}
+
+.moonhwa{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:6550px	
+}
+
+.hankook{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:7550px	
+}
+
+.khan{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:8550px	
+}
+
+.seoul{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:9550px	
+}
+
+.kbs{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:10550px	
+}
+.mbc{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:11550px	
+}
+.sbs{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:12550px	
+}
+.tvcho{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:13550px	
+}
+
+.jtbc{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:14550px	
+}
+
+.chaa{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:15550px	
+}
+
+.mbn{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:16550px	
+}
+
+
+
+#press {
+	white-space:nowrap; 
+    overflow-x: auto; }
+</style>
+<body>
+
+<h1>사건 2</h1>
+<!-- <p class="index">헤드라인을 움직여 보세요 어쩌구</p> -->
+<!-- <p class="index">원하는/눈에띄는/재미있는 헤드라인을 찾아보세요!
+다 봤으면 버튼을 눌러 언론사별로도 보세요/ 오른쪽 상단 버튼을 눌러 언론사별로 볼 수 있습니다. or 정리된 모습을 보고 싶다면..</p> -->
+<div id= press>
+<p class="chosun">조선일보</p>
+<p class="jungang">중앙일보</p>
+<p class="donga">동아일보</p>
+<p class="maekyung">매일경제</p>
+<p class="hankyung">한국경제</p>
+<p class="hani">한겨레</p>
+<p class="moonhwa">문화일보</p>
+<p class="hankook">한국일보</p>
+<p class="khan">경향신문</p>
+<p class="seoul">서울신문</p>
+<p class="kbs">KBS</p>
+<p class="mbc">MBC</p>
+<p class="sbs">SBS</p>
+<p class="tvcho">TV조선</p>
+<p class="jtbc">JTBC</p>
+<p class="chaa">채널에이</p>
+<p class="mbn">MBN</p>
+
+</div>
+<p class="return"><a href ="case100_main.html" class="re">돌아가기</a></p>
+<!-- <p class="switch">바꾸기</p> -->
+<!-- 
+------------조선------------- -->
+<div id="masterdiv">
+<div id="mydiv1-1">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/01/19/2020011900826.html" target="_blank">
+  '한일 재계 거인' 신격호 롯데 명예회장 별세</a> </div>
+</div>
+
+<div id="mydiv1-2">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/01/19/2020011900826.html" target="_blank">
+  [신격호 별세] 83엔 들고 유학, 123층 마천루까지…재계 5위 '신화' 만들다</a></div>
+</div>
+
+<div id="mydiv1-3">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/01/20/2020012000259.html" target="_blank"> 신격호 명예회장 별세… '사실혼' 서미경 파란만장 인생 재조명</a></div>
+</div>
+
+<div id="mydiv1-4">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/01/20/2020012000385.html" target="_blank"> 대기업 '창업 1세대' 롯데 신격호 회장 별세…3남매 함께 모여 '애도'</a> </div>
+</div>
+
+<div id="mydiv1-5">
+  <div id="mydivheader"><a href="https://biz.chosun.com/site/data/html_dir/2020/01/21/2020012102847.html?rsMobile=false" target="_blank"> [신격호 별세] 박찬호 “신격호 회장, 매번 직접 배웅… 많이 배웠다”</a></div>
+</div>
+
+<div id="mydiv1-6">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/02/07/2020020703130.html" target="_blank"> 1년간 20차례 인터뷰… 故 신격호 명예회장 마지막 육성</a> </div>
+</div>
+
+<div id="mydiv1-7">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/02/07/2020020703465.html" target="_blank"> 신격호 회장 사주엔 五金이</a></div>
+</div>
+
+<div id="mydiv1-8">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/01/20/2020012000385.html" target="_blank"> 대기업 '창업 1세대' 롯데 신격호 회장 별세…3남매 함께 모여 '애도'</a> </div>
+</div>
+
+<div id="mydiv1-9">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/02/10/2020021003268.html" target="_blank">신격호 롯데 명예회장의 소박한 묘역 공개… 生前 철학 "거기 가 봤나?" 새겨</a></div>
+</div>
+
+<!-- ----------------중앙------------ -->
+
+<div id="mydiv2-1">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23685656" target="_blank">
+  "두고봐라, 1년 뒤 교통체증 날 것"···사진으로 본 '신격호 99년'</a> </div>
+</div>
+
+<div id="mydiv2-2">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23685682" target="_blank">
+ 신격호 명예회장, 한때 포브스 선정 세계 부호 5위에 랭크</a></div>
+</div>
+
+<div id="mydiv2-3">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23685743" target="_blank"> 10대 그룹 유일 생존 신격호 별세···'재계 1세대' 시대 저물다</a></div>
+</div>
+
+<div id="mydiv2-4">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23685715" target="_blank"> 갑자기 별세한 신격호 회장 빈소엔 검정 세단 가득…유가족 빈소 논의 중</a> </div>
+</div>
+
+<div id="mydiv2-5">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23686392" target="_blank"> "日 때려눕힌 손이다" 신격호, 일본인들 앞에서 홍수환 자랑</a></div>
+</div>
+
+<div id="mydiv2-6">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23686217" target="_blank"> 43년간 모교 수학여행비 지원한 고 신격호 회장…주민들 "큰 별이 졌다"</a> </div>
+</div>
+
+<div id="mydiv2-7">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23686522" target="_blank"> 롯데 '상한가' 한진 '상승' LG '하락'...총수 별세에 주가 달랐던 이유는</a></div>
+</div>
+
+<div id="mydiv2-8">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23686850" target="_blank"> 신격호 1조 재산 상속인은 4명···어떻게 나누든 국세청이 최다</a> </div>
+</div>
+
+<div id="mydiv2-9">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23687449" target="_blank">롯데타운 만든 신격호 50년지기 "뉴욕에 롯데월드 세웠다면…"</a></div>
+</div>
+
+<div id="mydiv2-10">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23687386" target="_blank">
+  야구선수 박찬호 "신격호 회장, 생전에 뵈면 항상 직접 배웅해줬다"</a> </div>
+</div>
+
+<div id="mydiv2-11">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23688011" target="_blank">
+ [동영상]평생의 숙원, 롯데월드타워 한 바퀴 돌고 떠난 신격호 회장</a></div>
+</div>
+
+<div id="mydiv2-12">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23687807" target="_blank"> “뉴욕 롯데월드 짓고 떠났더라면…”</a></div>
+</div>
+
+<div id="mydiv2-13">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23688776" target="_blank">
+ [outlook] 신격호·김우중 같은 기업가, ‘반기업’ 한국서 또 나올까</a> </div>
+</div>
+
+
+<!-- ----------------동아------------ -->
+
+<div id="mydiv3-1">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Economy/article/all/20200120/99313424/1" target="_blank">
+  83엔으로 시작… 롯데 신화 쓴 유통 거인 신격호 명예회장 별세</a> </div>
+</div>
+
+<div id="mydiv3-2">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Economy/article/all/20200122/99355295/1" target="_blank">
+ 신격호 명예회장 영결식… 신동빈 “타지에서 조국 먼저 떠올린 분” </a></div>
+</div>
+
+<div id="mydiv3-3">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Economy/article/all/20200120/99313627/1" target="_blank"> “열정-도전정신으로 기업보국… 겸손함 늘 강조했던 巨商”</a></div>
+</div>
+
+<div id="mydiv3-4">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Economy/article/all/20200122/99368700/5" target="_blank"> 마지막길 떠난 ‘위대한 거인’ 故신격호 롯데 창업주</a> </div>
+</div>
+
+<div id="mydiv3-5">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Economy/article/all/20200120/99332265/1" target="_blank"> 신격호 빈소 정·재계 조문 행렬…文대통령 “韓 경제 토대 쌓은 창업 세대”</a></div>
+</div>
+
+<div id="mydiv3-6">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Economy/article/all/20200123/99385527/1" target="_blank"> “호텔롯데 상장해 글로벌 롯데 기틀 마련”</a> </div>
+</div>
+
+<div id="mydiv3-7">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Economy/article/all/20200120/99331173/5" target="_blank"> 신격호 명예회장 빈소 정·재계 조문 행렬 이어져</a></div>
+</div>
+
+<div id="mydiv3-8">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Economy/article/all/20200120/99313447/1" target="_blank">껌으로 시작해 123층 월드타워까지… 맨주먹으로 롯데 키워</a> </div>
+</div>
+
+<div id="mydiv3-9">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Economy/article/all/20200122/99358826/1" target="_blank">거인 신격호, 평생 숙원 롯데타워 마지막 나들이"</a></div>
+</div>
+
+<div id="mydiv3-10">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Economy/article/all/20200122/99354852/1" target="_blank">신동빈-신동주, 영결식서 나란히 헌화…인사말은 ‘형님 먼저’
+  </a> </div>
+</div>
+
+<!-- ----------------4 매경------------ -->
+
+<div id="mydiv4-1">
+  <div id="mydivheader"><a href="https://www.mk.co.kr/news/society/view/2020/01/62321/" target="_blank">
+  아버지 신격호 별세에 신동주·신동빈 재회…롯데家 조문 행렬'</a> </div>
+</div>
+
+<div id="mydiv4-2">
+  <div id="mydivheader"><a href="https://www.mk.co.kr/news/business/view/2020/01/62218/" target="_blank">
+일본 언론, 신격호 명예회장 별세 신속 보도…"입지전적 인물"</a></div>
+</div>
+
+<div id="mydiv4-3">
+  <div id="mydivheader"><a href="https://m.mk.co.kr/news/economy/view/2020/01/62164/" target="_blank">맨땅에서 한강의 기적까지'…재벌 1·2세 시대 역사 속으로</a></div>
+</div>
+
+<div id="mydiv4-4">
+  <div id="mydivheader"><a href="https://www.mk.co.kr/news/business/view/2020/01/71731/" target="_blank">故신격호 영결식…신동빈 "아버지는 한국을 사랑했다"</a> </div>
+</div>
+
+<div id="mydiv4-5">
+  <div id="mydivheader"><a href="https://www.mk.co.kr/news/business/view/2020/01/62241/" target="_blank">신격호 회장 고향 마을 주민들 "큰 별이 지셨다"</a></div>
+</div>
+
+<div id="mydiv4-6">
+  <div id="mydivheader"><a href="https://www.mk.co.kr/news/business/view/2020/01/66230/" target="_blank"> 정유·제철 사업 원했지만…꿈 접었던 신격호</a> </div>
+</div>
+
+<div id="mydiv4-7">
+  <div id="mydivheader"><a href="https://www.mk.co.kr/news/business/view/2020/01/70199/" target="_blank">`롯데 별장` 있는 울산에도 故신격호 회장 추모 행렬</a></div>
+</div>
+
+<div id="mydiv4-8">
+  <div id="mydivheader"><a href="https://www.mk.co.kr/news/business/view/2020/01/62199/" target="_blank">외환·금융위기때 `뚝심` 리더십…공격적 M&A로 재계 5위</a> </div>
+</div>
+
+<div id="mydiv4-9">
+  <div id="mydivheader"><a href="https://www.mk.co.kr/news/business/view/2020/01/66041/" target="_blank">신격호 회장 고향 울산에도 분향소 설치…시, 적극 지원</a></div>
+</div>
+
+<div id="mydiv4-10">
+  <div id="mydivheader"><a href="https://www.mk.co.kr/news/business/view/2020/01/62024/" target="_blank">겉치레 삼가고 실질 추구…`거화취실` 몸소 실천
+  </a> </div>
+</div>
+
+<div id="mydiv4-11">
+  <div id="mydivheader"><a href="https://www.mk.co.kr/news/business/view/2020/01/63709/" target="_blank">영도대교 도개 재개 등 신격호의 남다른 부산 애정, 그 까닭은?
+  </a> </div>
+</div>
+<!-- ----------------5 한경------------ -->
+
+
+<div id="mydiv5-1">
+  <div id="mydivheader"><a href="https://www.hankyung.com/economy/article/2020011974717" target="_blank">
+  롯데그룹 창업주 신격호 명예회장 별세…향년 99세</a> </div>
+</div>
+
+<div id="mydiv5-2">
+  <div id="mydivheader"><a href="https://www.hankyung.com/economy/article/2020011977991" target="_blank">
+ 신격호 명예회장 타계, 아산병원에 장례식장…롯데그룹장으로 치러</a></div>
+</div>
+
+<div id="mydiv5-3">
+  <div id="mydivheader"><a href="https://www.hankyung.com/economy/article/2020011976431" target="_blank"> 신격호의 지극한 고향·동포사랑…사재 털어 매년 울산서 잔치</a></div>
+</div>
+
+<div id="mydiv5-4">
+  <div id="mydivheader"><a href="https://www.hankyung.com/economy/article/2020011976441" target="_blank">83엔 들고 일본行…껌에서 백화점·화학으로 영토 넓힌 '미다스 辛'</a> </div>
+</div>
+
+<div id="mydiv5-5">
+  <div id="mydivheader"><a href="https://www.hankyung.com/economy/article/2020011976181" target="_blank">잠실벌을 관광 메카로 바꾼 상상력…신격호는 '최고 디벨로퍼'였다</a> </div>
+</div>
+
+<div id="mydiv5-6">
+  <div id="mydivheader"><a href="https://www.hankyung.com/economy/article/2020012249021" target="_blank">故 신격호 롯데그룹 명예회장 영결식…"조국 발전에 기여해야 한다는 생각을 평생 실천한 분"</a> </div> 
+</div>
+
+<div id="mydiv5-7">
+  <div id="mydivheader"><a href="https://www.hankyung.com/economy/article/202001200159g" target="_blank">황각규가 말하는 故신격호…"'절대 포기 말라'던 도전의 역사" </a> </div>
+ </div>
+
+<div id="mydiv5-8">
+  <div id="mydivheader"><a href="https://www.hankyung.com/economy/article/202001215410g" target="_blank">故신격호 빈소 마지막 날…구광모·허창수 등 재계 조문 잇따라</a> </div>
+</div>
+
+<div id="mydiv5-9">
+  <div id="mydivheader"><a href="https://www.hankyung.com/economy/article/2020011976191" target="_blank">신격호 '123층의 꿈' 30년 만에 완성</a></div>
+</div>
+
+<div id="mydiv5-10">
+  <div id="mydivheader"><a href="https://www.hankyung.com/society/article/202001215060Y" target="_blank">롯데 신격호 마지막 길…구광모·정용진 등 각계 조문 이어져
+  </a> </div>
+</div>
+
+<div id="mydiv5-11">
+  <div id="mydivheader"><a href="https://www.hankyung.com/economy/article/202001234766g" target="_blank">"진짜 조의금 안 받나요?"…故신격호 빈소 뒷이야기
+  </a> </div>
+</div>
+
+<div id="mydiv5-12">
+  <div id="mydivheader"><a href="https://www.hankyung.com/economy/article/202001212714g" target="_blank">롯데家 형제 사흘째 빈소…서미경 간밤 조문 無
+  </a> </div>
+</div>
+
+
+<!-- ----------------6 한겨레------------ -->
+<div id="mydiv6-1">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/economy/marketing/924967.html" target="_blank">
+  [속보] 신격호 롯데 명예회장 별세…향년 99 </a> </div>
+</div>
+
+<div id="mydiv6-2">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/economy/marketing/924971.html" target="_blank">
+ 신격호 명예회장 별세…‘창업 1세대’ 저물다</a></div>
+</div>
+
+<div id="mydiv6-3">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/economy/marketing/925012.html" target="_blank"> 롯데 신동빈 체제 다져와…‘형제의 난’ 재발 가능성 적어</a></div>
+</div>
+
+<div id="mydiv6-4">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/economy/marketing/925013.html" target="_blank">롯데껌으로 시작 재계 5위 일궈…두 아들 다툼으로 ‘굴곡진 말년’</a> </div>
+</div>
+
+<div id="mydiv6-5">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/economy/marketing/925014.html" target="_blank">세번의 결혼, 2남 2녀…구속 위기 배경엔 복잡한 가계도’</a> </div>
+</div>
+
+<div id="mydiv6-6">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/economy/marketing/925167.html" target="_blank">“상당한 도전의 역사…빈손으로 고도성장 일궈”</a> </div> 
+</div>
+
+<div id="mydiv6-7">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/economy/marketing/925356.html" target="_blank">신격호 회장 영결식…신동빈 회장 “조국을 먼저 떠올린 분”</a> </div>
+ </div>
+
+<!-- ----------------7 문화------------ -->
+
+<div id="mydiv7-1">
+  <div id="mydivheader"><a href="http://www.munhwa.com/news/view.html?no=2020012201073603006001 " target="_blank">
+  “성공·실패 모두 떠안는 책임감과 헌신… 정말 멋진 분이셨다”</a> </div>
+</div>
+
+<div id="mydiv7-2">
+  <div id="mydivheader"><a href="http://www.munhwa.com/news/view.html?no=2020012101072303006003" target="_blank">
+“창업은 창조, 역경 넘는 건 도전”
+</a></div>
+</div>
+
+<div id="mydiv7-3">
+  <div id="mydivheader"><a href="http://www.munhwa.com/news/view.html?no=2020012001070821337001" target="_blank"> “안타깝고 비통한 마음”… 정·재계 인사 조문행렬
+</a></div>
+</div>
+
+<div id="mydiv7-4">
+  <div id="mydivheader"><a href="http://news.kmib.co.kr/article/view.asp?arcid=0014155812" target="_blank">‘평생의 꿈’ 롯데월드타워 들른 뒤 마지막길 떠나는 故 신격호 회장 
+</a> </div>
+</div>
+
+<div id="mydiv7-5">
+  <div id="mydivheader"><a href="http://www.munhwa.com/news/view.html?no=2020012001070803006001" target="_blank">“니, 가 봤나?”… 맨주먹 현장경영으로 일궈낸 '기업보국'</a> </div>
+</div>
+
+<div id="mydiv7-6">
+  <div id="mydivheader"><a href="http://www.munhwa.com/news/view.html?no=2020012001072339344001" target="_blank">유언장 남기지않은 신격호…'1조원대 재산'은 어디로?</a> </div> 
+</div>
+
+ <div id="mydiv7-7">
+  <div id="mydivheader"><a href="http://news.kmib.co.kr/article/view.asp?arcid=0014145881" target="_blank">롯데 키운 ‘거인’ 신격호 회장이 걸어온 길 </a> </div>
+</div>
+
+<div id="mydiv7-8">
+  <div id="mydivheader"><a href="http://www.munhwa.com/news/view.html?no=20200119MW201844526693" target="_blank">화려한 전성기에서 쓸쓸한 퇴장까지…신격호 어록</a> </div>
+</div>
+
+<div id="mydiv7-9">
+  <div id="mydivheader"><a href="http://www.munhwa.com/news/view.html?no=20200119MW20130853923" target="_blank">일본 언론, 신격호 명예회장 별세 신속 보도…“입지전적 인물”</a> </div> 
+</div>
+
+<div id="mydiv7-10">
+  <div id="mydivheader"><a href="http://www.munhwa.com/news/view.html?no=20200119MW192816526462" target="_blank">'혈혈단신' 대한해협 건너 롯데그룹 일군 신격호 명예회장 별세</a> </div> 
+</div>
+
+
+<!-- ----------------8 한국------------ -->
+<div id="mydiv8-1">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202001192286042417" target="_blank">
+  15개월 만에 아버지 신격호 빈소서 만난 형제, 함께 장례 논의 </a> </div>
+</div>
+
+<div id="mydiv8-2">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202001191527775517" target="_blank">
+ 대물림 된 롯데家 '형제의 난'...한국 재계에 포진한 신격호의 동생들</a></div>
+</div>
+
+<div id="mydiv8-3">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202001211556064960" target="_blank"> 신세계 이명희 회장-정용진 부회장, 고 신격호 명예회장 애도</a></div>
+</div>
+
+<div id="mydiv8-4">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202001201706325110" target="_blank">조원태 한진 회장, 고개 푹 숙인 채…신격호 명예회장 빈소 찾아</a> </div>
+</div>
+
+<div id="mydiv8-5">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202001220974739658" target="_blank">마침내 나란히 선 신동빈ㆍ신동주 형제, 신격호 영전에 함께 헌화</a> </div>
+</div>
+
+<div id="mydiv8-6">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202001201412755519" target="_blank">한국일보[포토] 신격호 빈소 앞 고개 숙인 롯데家</a> </div> 
+</div>
+
+ <div id="mydiv8-7">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202001191808319872" target="_blank">[사설] ‘롯데 신화’ 일군 신격호 별세, 그룹 거듭나는 계기 되길</a> </div>
+</div>
+<!-- ----------------9 경향------------ -->
+<div id="mydiv9-1">
+  <div id="mydivheader"><a href="http://m.biz.khan.co.kr/view.html?art_id=202001191703001" target="_blank">
+  풍선껌'으로 시작, 대기업 일군 롯데 신격호 파란만장 인생사'</a> </div>
+</div>
+
+<div id="mydiv9-2">
+  <div id="mydivheader"><a href="http://biz.khan.co.kr/khan_art_view.html?artid=202001192239015&code=920101" target="_blank">
+ 롯데 '창업' 신격호 명예회장 별세</a></div>
+</div>
+
+<div id="mydiv9-3">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202001201119001" target="_blank"> 신격호 빈소에 정세균 총리 등 조문…이건희, 정몽구 회장 조화도</a></div>
+</div>
+
+<div id="mydiv9-4">
+  <div id="mydivheader"><a href="http://m.biz.khan.co.kr/view.html?art_id=202001220943001" target="_blank">고 신격호 회장 영결식…롯데타워 들렀다 하늘로</a> </div>
+</div>
+
+<div id="mydiv9-5">
+  <div id="mydivheader"><a href="http://m.biz.khan.co.kr/view.html?art_id=202001192211005" target="_blank"> 얽힌 지분구조·황제경영…두 아들 경영권 분쟁으로 씁쓸한 말년</a></div>
+</div>
+<!-- ----------------10 서울------------ -->
+<div id="mydiv10-1">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200125500007" target="_blank">
+  1조원 넘는 롯데 신격호 재산…누가 얼마나 상속받나</a> </div>
+</div>
+
+<div id="mydiv10-2">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200120500003" target="_blank">
+ 신격호 명예회장 사실혼 관계 서미경 조문…그는 누구</a></div>
+</div>
+
+<div id="mydiv10-3">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200122800007" target="_blank"> 마지막길 떠난 故 신격호 회장…신동빈 “조국을 먼저 떠올린 분”</a></div>
+</div>
+
+<div id="mydiv10-4">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200120002003" target="_blank">롯데껌으로 시작 123층 월드타워까지… '창업1세대' 시대 막내려</a> </div>
+</div>
+
+<!-- ----------------11 kbs------------ -->
+<div id="mydiv11-1">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=4365159" target="_blank">
+ 롯데 신격호 명예회장 병세 악화…그룹 임원들 병원 집결 </a> </div>
+</div>
+
+<div id="mydiv11-2">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=4365611" target="_blank">
+[자막뉴스] 신격호 롯데 명예회장 별세…저무는 ‘창업 1세대’</a></div>
+</div>
+
+<div id="mydiv11-3">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=4365609" target="_blank"> 신격호 빈소 이틀째…각계 조문 잇따라</a></div>
+</div>
+
+<div id="mydiv11-4">
+  <div id="mydivheader"><a href="https://news.kbs.co.kr/news/view.do?ncd=4365417" target="_blank">풍선껌에서 롯데타워까지…신격호 별세</a> </div>
+</div>
+
+<div id="mydiv11-5">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=4365324" target="_blank">신격호 롯데 명예회장 별세…저무는 ‘창업 1세대’</a> </div>
+</div>
+
+<div id="mydiv11-6">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=4365261" target="_blank">신격호 롯데 명예회장 향년 99세로 별세</a> </div> 
+</div>
+
+ <div id="mydiv11-7">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=4365197" target="_blank">롯데 신격호 명예회장 노환으로 별세</a> </div>
+</div>
+
+<div id="mydiv11-8">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=4365195" target="_blank">재계, 신격호 롯데 명예회장 별세 일제히 애도</a> </div> 
+</div>
+
+ <div id="mydiv11-9">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=4365161" target="_blank">롯데 신격호 명예회장 향년 99세로 별세…1세대 기업인 막 내려</a> 
+  </div>
+</div>
+<!-- ----------------12 mbc------------ -->
+<div id="mydiv12-1">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nw1200/article/5653346_32496.html" target="_blank">
+故 신격호 회장 영결식…"조국 먼저 생각한 분" </a> </div>
+</div>
+
+<div id="mydiv12-2">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nwtoday/article/5652426_32531.html" target="_blank">
+'롯데껌'으로 이룬 신화…신격호 회장은 누구?</a></div>
+</div>
+
+<div id="mydiv12-3">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/news/2020/world/article/5652402_32640.html" target="_blank"> 日 언론, 신격호 명예회장 별세 신속 보도…"입지전적 인물"</a></div>
+</div>
+
+<div id="mydiv12-4">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nwtoday/article/5652399_32531.html" target="_blank">신동주·신동빈 함께 상주…조문객 이어져</a> </div>
+</div>
+
+<div id="mydiv12-5">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nwdesk/article/5652351_32524.html" target="_blank">롯데 신격호 회장 별세…"창업 1세대 막 내려"</a> </div>
+</div>
+
+<div id="mydiv12-6">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/news/2020/econo/article/5652298_32647.html" target="_blank">롯데 신격호 명예회장 별세…대기업 창업1세대 막내려</a> </div> 
+</div>
+
+
+<!-- ----------------13 sbs------------ -->
+
+<div id="mydiv13-1">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005615239&plink=SEARCH&cooper=SBSNEWSSEARCH" target="_blank">
+마지막 길 떠난 故 신격호 회장…신동빈 "조국을 먼저 떠올린 분" </a> </div>
+</div>
+
+<div id="mydiv13-2">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005613106&plink=SEARCH&cooper=SBSNEWSSEARCH" target="_blank">
+아버지 빈소서 재회한 '롯데가 형제'…경영권 영향은</a></div>
+</div>
+
+<div id="mydiv13-3">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005611932&plink=SEARCH&cooper=SBSNEWSSEARCH" target="_blank">이재용 부회장 재계 첫 발길…고 신격호 회장 조문 행렬</a></div>
+</div>
+
+<div id="mydiv13-4">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005611476&plink=SEARCH&cooper=SBSNEWSSEARCH" target="_blank">'경영권 분쟁' 신동주-신동빈 재회… 신격호 빈소 조문행렬 </a> </div>
+</div>
+
+<div id="mydiv13-5">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005611328&plink=SEARCH&cooper=SBSNEWSSEARCH" target="_blank">신격호 롯데 명예회장 별세…'창업 1세대' 막 내리다</a> </div>
+</div>
+
+<div id="mydiv13-6">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005611285&plink=SEARCH&cooper=SBSNEWSSEARCH" target="_blank">일본 언론, 신격호 명예회장 별세 신속 보도…"입지전적 인물"</a> </div> 
+</div>
+
+<div id="mydiv13-7">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005611033&plink=SEARCH&cooper=SBSNEWSSEARCH" target="_blank">혈혈단신→재계 5위까지…롯데 신격호 명예회장 별세</a> </div> 
+</div>
+
+<!-- ----------------14 tv조선------------ -->
+<div id="mydiv14-1">
+  <div id="mydivheader"><a href="http://news.tvchosun.com/site/data/html_dir/2020/01/19/2020011990058.html" target="_blank">
+롯데 창업주 신격호 회장 별세…'창업 1세대' 시대 마감 </a> </div>
+</div>
+
+<div id="mydiv14-2">
+  <div id="mydivheader"><a href="http://news.tvchosun.com/site/data/html_dir/2020/01/22/2020012290064.html" target="_blank">
+'거인'의 마지막 길…故신격호 명예회장 영결식 거행</a></div>
+</div>
+<!-- ----------------15 jtbc------------ -->
+
+<div id="mydiv15-1">
+  <div id="mydivheader"><a href="https://news.jtbc.joins.com/article/article.aspx?news_id=NB11930523" target="_blank">
+83엔 들고가 일군 '롯데 신화'…고 신격호의 '명과 암' </a> </div>
+</div>
+
+<div id="mydiv15-2">
+  <div id="mydivheader"><a href="https://news.jtbc.joins.com/article/article.aspx?news_id=NB11930436" target="_blank">
+신격호 롯데 명예회장 별세…5대그룹 창업 1세대 막내려</a></div>
+</div>
+
+<div id="mydiv15-3">
+  <div id="mydivheader"><a href="https://news.jtbc.joins.com/article/article.aspx?news_id=NB11930417" target="_blank">[속보] 롯데 창업주 신격호 명예회장 별세</a></div>
+</div>
+
+<div id="mydiv15-4">
+  <div id="mydivheader"><a href="https://news.jtbc.joins.com/article/article.aspx?news_id=NB11930385" target="_blank">'껌' 사업에서 대기업까지…롯데 신격호 명예회장 별세</a> </div>
+</div>
+
+
+<!-- ----------------16 채널a------------ -->
+<div id="mydiv16-1">
+  <div id="mydivheader"><a href="http://www.ichannela.com/news/main/news_detailPage.do?publishId=000000185257" target="_blank">
+막내린 신화…신격호 명예회장 별세 </a> </div>
+</div>
+
+<div id="mydiv16-2">
+  <div id="mydivheader"><a href="http://www.ichannela.com/news/main/news_detailPage.do?publishId=000000185254" target="_blank">
+‘롯데 신화’ 신격호 명예회장 별세…‘경영권 다툼’ 형제 한자리</a></div>
+</div>
+
+<div id="mydiv16-3">
+  <div id="mydivheader"><a href="http://www.ichannela.com/news/main/news_detailPage.do?publishId=000000185152" target="_blank">롯데 신격호 명예회장 별세…창업 1세대 역사 속으로</a></div>
+</div>
+
+<div id="mydiv16-4">
+  <div id="mydivheader"><a href="http://www.ichannela.com/news/main/news_detailPage.do?publishId=000000185141" target="_blank">롯데 창업 신격호 명예회장 별세</a> </div>
+</div>
+
+<!-- ----------------17 mbn------------ -->
+
+<div id="mydiv17-1">
+  <div id="mydivheader"><a href="https://www.mbn.co.kr/pages/news/newsView.php?news_seq_no=4037517" target="_blank">
+ '신격호 빈소 조문' 신동주-신동빈, 1여년만 재회…서미경 조용히 다녀가</a> </div>
+</div>
+
+<div id="mydiv17-2">
+  <div id="mydivheader"><a href="https://www.mbn.co.kr/pages/news/newsView.php?news_seq_no=4037515" target="_blank">
+롯데 신격호 명예회장 별세…향년 99세</a></div>
+</div>
+
+<div id="mydiv17-3">
+  <div id="mydivheader"><a href="https://www.mbn.co.kr/pages/news/newsView.php?news_seq_no=4037508" target="_blank"> '경영권 다툼' 신동주·동빈 형제, 1년 3개월 만에 재회 </a></div>
+</div>
+
+<div id="mydiv17-4">
+  <div id="mydivheader"><a href="https://www.mbn.co.kr/pages/news/newsView.php?news_seq_no=4037466" target="_blank">신격호 명예회장 별세…21일 안치홍 롯데 입단식 잠정 연기/a> </div>
+</div>
+
+<div id="mydiv17-5">
+  <div id="mydivheader"><a href="https://www.mbn.co.kr/pages/news/newsView.php?news_seq_no=4037431" target="_blank">신격호 재계 5위 성공신화…껌으로 시작해 123층 롯데월드타워까지</a> </div>
+</div>
+
+<div id="mydiv17-6">
+  <div id="mydivheader"><a href="https://www.mbn.co.kr/pages/news/newsView.php?news_seq_no=4037356" target="_blank">한국 유통업계 도약시킨 고 신격호 롯데 명예회장</a> </div> 
+</div>
+
+ <div id="mydiv17-7">
+  <div id="mydivheader"><a href="https://www.mbn.co.kr/pages/news/newsView.php?news_seq_no=4037648" target="_blank">[특징주] 신격호 명예회장 별세 소식에 롯데그룹株 동반 상승</a> </div>
+</div>
+
+</div>
+<script>	
+dragElement(document.getElementById("mydiv1-1"));
+dragElement(document.getElementById("mydiv1-2"));
+dragElement(document.getElementById("mydiv1-3"));
+dragElement(document.getElementById("mydiv1-4"));
+dragElement(document.getElementById("mydiv1-5"));
+dragElement(document.getElementById("mydiv1-6"));
+dragElement(document.getElementById("mydiv1-7"));
+dragElement(document.getElementById("mydiv1-8"));
+dragElement(document.getElementById("mydiv1-9"));
+dragElement(document.getElementById("mydiv2-1"));
+dragElement(document.getElementById("mydiv2-2"));
+dragElement(document.getElementById("mydiv2-3"));
+dragElement(document.getElementById("mydiv2-4"));
+dragElement(document.getElementById("mydiv2-5"));
+dragElement(document.getElementById("mydiv2-6"));
+dragElement(document.getElementById("mydiv2-7"));
+dragElement(document.getElementById("mydiv2-8"));
+dragElement(document.getElementById("mydiv2-9"));
+dragElement(document.getElementById("mydiv2-10"));
+dragElement(document.getElementById("mydiv2-11"));
+dragElement(document.getElementById("mydiv2-12"));
+dragElement(document.getElementById("mydiv2-13"));
+
+dragElement(document.getElementById("mydiv3-1"));
+dragElement(document.getElementById("mydiv3-2"));
+dragElement(document.getElementById("mydiv3-3"));
+dragElement(document.getElementById("mydiv3-4"));
+dragElement(document.getElementById("mydiv3-5"));
+dragElement(document.getElementById("mydiv3-6"));
+dragElement(document.getElementById("mydiv3-7"));
+dragElement(document.getElementById("mydiv3-8"));
+dragElement(document.getElementById("mydiv3-9"));
+dragElement(document.getElementById("mydiv3-10"));
+
+dragElement(document.getElementById("mydiv4-1"));
+dragElement(document.getElementById("mydiv4-2"));
+dragElement(document.getElementById("mydiv4-3"));
+dragElement(document.getElementById("mydiv4-4"));
+dragElement(document.getElementById("mydiv4-5"));
+dragElement(document.getElementById("mydiv4-6"));
+dragElement(document.getElementById("mydiv4-7"));
+dragElement(document.getElementById("mydiv4-8"));
+dragElement(document.getElementById("mydiv4-9"));
+dragElement(document.getElementById("mydiv4-10"));
+dragElement(document.getElementById("mydiv4-11"));
+
+dragElement(document.getElementById("mydiv5-1"));
+dragElement(document.getElementById("mydiv5-2"));
+dragElement(document.getElementById("mydiv5-3"));
+dragElement(document.getElementById("mydiv5-4"));
+dragElement(document.getElementById("mydiv5-5"));
+dragElement(document.getElementById("mydiv5-6"));
+dragElement(document.getElementById("mydiv5-7"));
+dragElement(document.getElementById("mydiv5-8"));
+dragElement(document.getElementById("mydiv5-9"));
+dragElement(document.getElementById("mydiv5-10"));
+dragElement(document.getElementById("mydiv5-11"));
+dragElement(document.getElementById("mydiv5-12"));
+
+dragElement(document.getElementById("mydiv6-1"));
+dragElement(document.getElementById("mydiv6-2"));
+dragElement(document.getElementById("mydiv6-3"));
+dragElement(document.getElementById("mydiv6-4"));
+dragElement(document.getElementById("mydiv6-5"));
+dragElement(document.getElementById("mydiv6-6"));
+dragElement(document.getElementById("mydiv6-7"));
+
+dragElement(document.getElementById("mydiv7-1"));
+dragElement(document.getElementById("mydiv7-2"));
+dragElement(document.getElementById("mydiv7-3"));
+dragElement(document.getElementById("mydiv7-4"));
+dragElement(document.getElementById("mydiv7-5"));
+dragElement(document.getElementById("mydiv7-6"));
+dragElement(document.getElementById("mydiv7-7"));
+dragElement(document.getElementById("mydiv7-8"));
+dragElement(document.getElementById("mydiv7-9"));
+dragElement(document.getElementById("mydiv7-10"));
+
+dragElement(document.getElementById("mydiv8-1"));
+dragElement(document.getElementById("mydiv8-2"));
+dragElement(document.getElementById("mydiv8-3"));
+dragElement(document.getElementById("mydiv8-4"));
+dragElement(document.getElementById("mydiv8-5"));
+dragElement(document.getElementById("mydiv8-6"));
+dragElement(document.getElementById("mydiv8-7"));
+
+dragElement(document.getElementById("mydiv9-1"));
+dragElement(document.getElementById("mydiv9-2"));
+dragElement(document.getElementById("mydiv9-3"));
+dragElement(document.getElementById("mydiv9-4"));
+dragElement(document.getElementById("mydiv9-5"));
+
+dragElement(document.getElementById("mydiv10-1"));
+dragElement(document.getElementById("mydiv10-2"));
+dragElement(document.getElementById("mydiv10-3"));
+dragElement(document.getElementById("mydiv10-4"));
+
+dragElement(document.getElementById("mydiv11-1"));
+dragElement(document.getElementById("mydiv11-2"));
+dragElement(document.getElementById("mydiv11-3"));
+dragElement(document.getElementById("mydiv11-4"));
+dragElement(document.getElementById("mydiv11-5"));
+dragElement(document.getElementById("mydiv11-6"));
+dragElement(document.getElementById("mydiv11-7"));
+dragElement(document.getElementById("mydiv11-8"));
+dragElement(document.getElementById("mydiv11-9"));
+
+dragElement(document.getElementById("mydiv12-1"));
+dragElement(document.getElementById("mydiv12-2"));
+dragElement(document.getElementById("mydiv12-3"));
+dragElement(document.getElementById("mydiv12-4"));
+dragElement(document.getElementById("mydiv12-5"));
+dragElement(document.getElementById("mydiv12-6"));
+
+dragElement(document.getElementById("mydiv13-1"));
+dragElement(document.getElementById("mydiv13-2"));
+dragElement(document.getElementById("mydiv13-3"));
+dragElement(document.getElementById("mydiv13-4"));
+dragElement(document.getElementById("mydiv13-5"));
+dragElement(document.getElementById("mydiv13-6"));
+dragElement(document.getElementById("mydiv13-7"));
+
+dragElement(document.getElementById("mydiv14-1"));
+dragElement(document.getElementById("mydiv14-2"));
+
+dragElement(document.getElementById("mydiv15-1"));
+dragElement(document.getElementById("mydiv15-2"));
+dragElement(document.getElementById("mydiv15-3"));
+dragElement(document.getElementById("mydiv15-4"));
+
+dragElement(document.getElementById("mydiv16-1"));
+dragElement(document.getElementById("mydiv16-2"));
+dragElement(document.getElementById("mydiv16-3"));
+dragElement(document.getElementById("mydiv16-4"));
+
+dragElement(document.getElementById("mydiv17-1"));
+dragElement(document.getElementById("mydiv17-2"));
+dragElement(document.getElementById("mydiv17-3"));
+dragElement(document.getElementById("mydiv17-4"));
+dragElement(document.getElementById("mydiv17-5"));
+dragElement(document.getElementById("mydiv17-6"));
+dragElement(document.getElementById("mydiv17-7"));
+
+
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+</body>
+</html>
